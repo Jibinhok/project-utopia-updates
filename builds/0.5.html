@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Utopia 0.5: Smooth walking</title>
+<meta name="description" content="Characters walk in straight lines instead of tile steps and zigzags · Characters no longer walk through each other · Walking uses far less data, so the server keeps up with more players">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header"><a href="../index.html">Project Utopia <span>Updates</span></a></header>
+<main>
+<article class="build">
+<p class="eyebrow">0.5 · 2026-10-28</p>
+<h1>Smooth walking</h1>
+<div class="notes">
+<h2>Development Version 5</h2>
+<p>We changed movement to be direct instead of the per tile staircasing. And we added seamless landscape mode!</p>
+<h3>Walking</h3>
+<ul>
+<li>A walk to a bush or the water is one straight line, not a staircase of tile steps. Diagonal trips are also shorter, so they get up to 29% quicker.</li>
+<li>Paths stay about two tiles off ponds and bushes where there&#39;s room, so characters go around a corner instead of brushing it.</li>
+</ul>
+<h3>Collision</h3>
+<ul>
+<li>We&#39;ve added some basic collision. Two characters never overlap, they move around eachother.</li>
+<li>A character that finds someone in its way waits for half a second, then plans a new route around them.</li>
+</ul>
+<h3>Behind the scenes</h3>
+<ul>
+<li>Characters on your screen no longer jump when the server corrects their position, and they stay in view while they walk across the edge of the screen.</li>
+<li>We fixed a vulnerability in this Dev that would allow a player to spam movement retries, which would clog up the server.</li>
+</ul>
+<h3>Landscape Mode!</h3>
+<ul>
+<li>The game now supports landscape mode!! and it is seamless, no settings, just use the phone setting or just turn your phone and watch it change.</li>
+</ul>
+<h3>THANK YOU FOR PLAYING</h3>
+<p>Please reach out if you have any questions about the game, or you want access to it while it&#39;s in development! jared.allen.games@gmail.com</p>
+</div>
+<section class="screenshots">
+<img src="../images/0.5/dev5Patch1.png" alt="Screenshot from 0.5" loading="lazy">
+</section>
+<p><a href="../index.html">← Every update</a></p>
+</article>
+</main>
+<footer>
+<nav class="socials"><a href="https://discord.gg/c5h6aYuU8E">Discord</a> · <a href="https://bsky.app/profile/projectutopiagame.bsky.social">Bluesky</a> · <a href="https://www.facebook.com/profile.php?id=61595484434259">Facebook</a> · <a href="https://ko-fi.com/projectutopia">Donate on Ko-fi</a></nav>
+<p>A multiplayer survival simulation, in beta. One update every week until 1.0 on Google Play and Steam.</p>
+</footer>
+</body>
+</html>
